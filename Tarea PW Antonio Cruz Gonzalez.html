@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aprendiendo HTML</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body bgcolor=#008080>
+
+    <h1 style="color:blue"><center>Bienvenido a su formulario</center></h2>
+
+   <h2 style="color: orange;"align="center">Inserte los datos requeridos y<br>
+        cuando termine de llenar todos los campos<br>
+        presione el bot&oacute;n "Aceptar".
+</h2>
+
+    <form action="/form" method="POST">
+        <ol start="1"><FONT color=#0000ff>
+            <li>
+                <fieldset>
+                    <legend>Nombre</legend>
+                    <label for="nombre"> <!--Se utiliza el "for" para si el ususario da clic encima de "Nombre" el cursor va directamente a la caja de comentarios-->
+                        <input type="text" id="nombre" name="nombr" placeholder="Introduzca su Nombre" maxlength="25" required pattern="[A-Za-z]{3,25}"> <!--'required' no permite enviar este campo vacio y 'pattern' solo permite la entrada de letras en minúscula y mayúscula y un mínimo y máximo de caracteres {3,25}-->
+                    </label>
+                </fieldset>
+                <br>
+            </li>
+            <li>
+                <fieldset>
+                    <legend>Apellido</legend>
+                    <label for="apellido">
+                        <input  id="apellido" name="apellido"  placeholder="Introduzca su Apellido" maxlength="25" required pattern="[A-Za-z]{3,25}">
+                    </label>
+                </fieldset>
+                <br>
+            </li>
+            <li>
+                <fieldset>
+                    <legend>Edad</legend>
+                    <label for="edad">
+                        <input type="number" id="edad" name="edad"  placeholder="Introduzca su Edad"  min="18" max="60" required>
+                    </label>
+                </fieldset>
+                <br>
+            </li>
+            <li>
+                <fieldset>
+                    <legend>Sexo</legend>
+                    <label>
+                        <input type="radio" name="sexo" value="masculino">Mascuclino
+                    </label><br>
+                    <label>
+                        <input type="radio" name="sexo" value="femenino">Femenino
+                    </label><br>
+                    <label>
+                        <input type="radio" name="sexo" value="otro">Otro
+                    </label><br>
+                </fieldset>
+            </li>
+            <li>
+                <fieldset>
+                    <legend>Comentario</legend>
+                    <label for="comentario">
+                    <textarea name="comentario" id="comentario" cols="30" rows="6" placeholder="Puede enviar alg&#250n comentario" maxlength="600"></textarea><br>
+                    </label><br>
+                </fieldset>
+            </li>
+            <button type="reset">Reset</button> 
+            <button type="submit">Aceptar</button>
+        </FONT></ol>
+    </form>
+
+</body>
+</html>
