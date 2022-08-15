@@ -1,0 +1,75 @@
+#titulo {
+    color: tomato;
+}
+
+p.especial {
+    color: mediumseagreen;
+}
+
+p.texto {
+    color: slateblue;
+}
+
+div p { /* esto es un comentario
+             dsadjgs*/
+    color: rgb(63, 15, 235);
+}
+
+div h2, div h3{
+    color: brown;
+}
+
+/* * {
+    font-size: 24px;
+    color: chocolate;
+} */ /* esto es un comentario*/
+/* esto es un comentario
+muchas lineas
+*/
+
+/*
+.color {
+    color: #ff0000; 
+}
+*/
+
+.color {
+    /* border: 5px tomato outset; */
+    /* border-style: solid;
+    border-color: blue;
+    border-radius: 5px;
+    border-width: 5px; */
+    border-style: solid;
+    border-color: blue;
+    border-radius: 90px;
+    border-width: 2rem;
+}
+
+.text {
+    font-family: 'Acme', sans-serif;
+    /* font-family: 'Splash', cursive; */
+    text-align: justify;
+    text-decoration: overline;
+    text-shadow: 3px 5px 5px blue;
+}
+
+.margen {
+    background-color: chocolate;
+    margin: 100px 200px;
+    padding: 30px 15px 5px;
+    border: groove 2px black;
+    height: 200px;
+    width: 200px;
+    overflow: scroll;
+    outline: 1px solid red;
+}
+
+#fondo {
+   /* /*  background-color: rgb(181, 243, 11); */
+    background-image: url('Captura.PNG');
+    background-size: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: right center; */
+    background: red url('Captura.PNG') repeat-y center bottom 100px 100px;
+}
