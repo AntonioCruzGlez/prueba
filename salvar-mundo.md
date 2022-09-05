@@ -1,2 +1,2 @@
 # Estos son los planes para:
-1-Destrur el Mundo
+1-Salvar el Mundo
